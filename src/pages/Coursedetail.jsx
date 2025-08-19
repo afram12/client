@@ -22,7 +22,7 @@ function Coursedetail() {
       const res = await API.get(`/courseview/${id}`,{
         withCredentials:true,
       });
-      setCourse(res.data);
+      setCourse(res.data.course);
     } catch (error) {
       console.log(error);
     }
