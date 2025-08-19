@@ -16,7 +16,7 @@ function Login() {
 
 
         try {
-            const res= await API.post("/Login", {email, password});
+            const res= await API.post("/login", {email, password});
 
             if(res.data.message == "Login successful"){
                 //user data to localhost me store karein 
